@@ -1,0 +1,622 @@
+.dashboard {
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.dashboard-header {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  padding: 24px 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 20px rgba(106, 17, 203, 0.15);
+}
+
+.dashboard-header h1 {
+  color: white;
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.back-home-button {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid white;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.back-home-button:hover {
+  background: white;
+  color: #6a11cb;
+  transform: translateY(-50%) scale(1.05);
+}
+
+/* Enhanced Tab Styles */
+.dashboard-tabs {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+  gap: 15px;
+}
+
+.tab-button {
+  flex: 1;
+  background: white;
+  color: #6a11cb;
+  border: none;
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(106, 17, 203, 0.1);
+}
+
+.tab-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(106, 17, 203, 0.2);
+}
+
+.tab-button.active {
+  background: #6a11cb;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(106, 17, 203, 0.3);
+}
+
+
+
+/* Product Step Section */
+.product-step-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.product-step-section h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.sub-tabs {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.sub-tab-button {
+  flex: 1;
+  background: white;
+  border: 2px solid transparent;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(106, 17, 203, 0.1);
+}
+
+.sub-tab-button:hover {
+  border-color: #6a11cb;
+  transform: translateY(-2px);
+}
+
+.sub-tab-button.active {
+  background: #6a11cb;
+  color: white;
+  border-color: #6a11cb;
+  transform: translateY(-2px);
+}
+
+/* Product Information Section */
+.animated-content {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-out;
+}
+
+.animated-content h4 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.animated-textarea {
+  width: 100%;
+  min-height: 200px;
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 16px;
+  resize: vertical;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.animated-textarea:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 0 3px rgba(106, 17, 203, 0.1);
+  outline: none;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.submit-btn {
+  background: #6a11cb;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #5a0fb6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(106, 17, 203, 0.2);
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-header {
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .back-home-button {
+    position: static;
+    transform: none;
+    margin-top: 15px;
+  }
+
+  .dashboard-tabs {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .sub-tabs {
+    flex-direction: column;
+  }
+
+  .animated-content {
+    padding: 20px;
+  }
+}
+
+/* QA Report Tabs Styles */
+.qa-report-container {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.qa-tabs {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 25px;
+  background: #f5f5f5;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.qa-tab {
+  padding: 12px 24px;
+  background: transparent;
+  border: none;
+  color: #6a11cb;
+  cursor: pointer;
+  flex: 1;
+  font-size: 15px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.qa-tab:hover {
+  background: rgba(106, 17, 203, 0.1);
+}
+
+.qa-tab.active {
+  background: #6a11cb;
+  color: white;
+}
+
+.report-section {
+  padding: 10px 0;
+}
+
+.report-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.report-item {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s ease;
+}
+
+.report-item:hover {
+  background-color: #f8f8f8;
+}
+
+.report-name {
+  font-weight: 600;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.report-date {
+  color: #0066cc;
+  cursor: pointer;
+}
+
+/* Report Details Section */
+.report-details {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.report-detail-header {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.report-detail-text {
+  width: 100%;
+  min-height: 150px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.back-button {
+  padding: 8px 16px;
+  background: #6a11cb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background: #5a0fb6;
+}
+
+/* Report Section Styles */
+.report-section {
+  padding: 25px;
+  background: white;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.report-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.report-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.report-item {
+  padding: 15px 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(106, 17, 203, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.report-item:hover {
+  transform: translateX(10px);
+  border-left-color: #6a11cb;
+  background: linear-gradient(to right, rgba(106, 17, 203, 0.05), transparent);
+  box-shadow: 0 4px 8px rgba(106, 17, 203, 0.2);
+}
+
+.report-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.report-item:hover .report-name {
+  color: #6a11cb;
+}
+
+.report-date {
+  color: #0066cc;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.report-item:hover .report-date {
+  color: #6a11cb;
+}
+
+/* Hand cursor effect */
+.report-item {
+  cursor: pointer;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply animations to items */
+.report-item {
+  animation: slideIn 0.5s ease-out forwards;
+  animation-delay: calc(var(--index) * 0.1s);
+  opacity: 0;
+}
+
+/* Ripple effect */
+.report-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.report-item::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(106, 17, 203, 0.2);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+.report-item:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(100, 100);
+    opacity: 0;
+  }
+}
+
+/* Report Details Container */
+.report-details-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(106, 17, 203, 0.1);
+  padding: 30px;
+  margin: 20px;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.report-header {
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.report-header h3 {
+  font-size: 24px;
+  color: #333;
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+.report-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.meta-label {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.meta-value {
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+.report-content {
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.report-section {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 18px;
+  color: #6a11cb;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.qa-report-text {
+  width: 100%;
+  min-height: 150px;
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 1.5;
+  resize: vertical;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.qa-report-text:focus {
+  border-color: #6a11cb;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(106, 17, 203, 0.1);
+}
+
+.report-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 2px solid #f0f0f0;
+}
+
+.status-badge {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  background: rgba(106, 17, 203, 0.1);
+  color: #6a11cb;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.back-button {
+  padding: 10px 20px;
+  border: 2px solid #6a11cb;
+  background: transparent;
+  color: #6a11cb;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: rgba(106, 17, 203, 0.1);
+  transform: translateY(-2px);
+}
+
+.save-button {
+  padding: 10px 20px;
+  background: #6a11cb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.save-button:hover {
+  background: #5a0fb6;
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
