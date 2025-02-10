@@ -1,0 +1,49 @@
+.plant-operator.dashboard-card {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    border-radius: 8px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 20px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .plant-operator.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .plant-operator .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .plant-operator .icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .plant-operator .card-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .plant-operator .view-dashboard-btn {
+    background: white;
+    color: #2575fc;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .plant-operator .view-dashboard-btn:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+  }
