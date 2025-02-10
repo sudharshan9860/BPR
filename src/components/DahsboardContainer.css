@@ -1,0 +1,49 @@
+.main-container {
+  min-height: 100vh;
+  background: #f8f9fa;
+  padding: 40px 20px;
+}
+
+.main-title {
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(106, 17, 203, 0.9), rgba(37, 117, 252, 0.9));
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Card Layout Enhancement for 3 cards */
+@media (min-width: 1024px) {
+  .dashboard-cards-container {
+    justify-content: space-evenly;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 2rem;
+    padding: 15px;
+  }
+  
+  .dashboard-cards-container {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
