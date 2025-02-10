@@ -1,0 +1,49 @@
+.qa-dashboard.dashboard-card {
+    background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+    border-radius: 8px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 20px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .qa-dashboard.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .qa-dashboard .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .qa-dashboard .icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .qa-dashboard .card-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .qa-dashboard .view-dashboard-btn {
+    background: white;
+    color: #FF6B6B;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .qa-dashboard .view-dashboard-btn:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+  }
