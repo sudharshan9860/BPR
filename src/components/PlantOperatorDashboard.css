@@ -1,0 +1,199 @@
+.mobile-dashboard {
+  min-height: 100vh;
+  background: #f5f7fa;
+  position: relative;
+}
+
+/* Header Styles */
+.mobile-header {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  height: 60px;
+}
+
+.header-content h1 {
+  color: white;
+  margin: 0;
+  font-size: 1.25rem;
+  text-align: center;
+  flex: 1;
+}
+
+.menu-button, .back-link {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  padding: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+/* Main Content */
+.main-content {
+  padding: 80px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-selection {
+  text-align: center;
+  padding: 16px;
+}
+
+.select-prompt {
+  color: #666;
+  margin: 0;
+}
+
+/* Image Preview */
+.image-preview-container {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 3/4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 16px 0;
+}
+
+.captured-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.no-image {
+  color: #666;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+}
+
+.hidden-input {
+  display: none;
+}
+
+.camera-button, .retake-button, .submit-button {
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.camera-button {
+  background: #2575fc;
+  color: white;
+}
+
+.retake-button {
+  background: #f8f9fa;
+  color: #2575fc;
+  border: 2px solid #2575fc;
+}
+
+.submit-button {
+  background: #2575fc;
+  color: white;
+}
+
+/* Side Menu */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 280px;
+  height: 100%;
+  background: white;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.side-menu.open {
+  transform: translateX(280px);
+}
+
+.menu-header {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.close-menu {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.product-list {
+  padding: 16px;
+}
+
+.product-item {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  border: none;
+  background: #f8f9fa;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.product-item.selected {
+  background: #2575fc;
+  color: white;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
