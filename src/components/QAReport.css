@@ -1,0 +1,211 @@
+.qa-report-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .report-section {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  .report-list-container {
+    padding-top: 10px;
+  }
+  
+  .report-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .report-item {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(106, 17, 203, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+  }
+  
+  .report-item:hover {
+    transform: translateX(10px);
+    border-left-color: #6a11cb;
+    background: linear-gradient(to right, rgba(106, 17, 203, 0.05), transparent);
+  }
+  
+  .report-item h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .report-item span {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  /* Report Details Styles */
+  .report-details-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(106, 17, 203, 0.1);
+    padding: 30px;
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  .report-header {
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .report-header h3 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .report-meta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+  }
+  
+  .meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .meta-label {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .meta-value {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .report-content {
+    margin-bottom: 25px;
+  }
+  
+  .section-title {
+    font-size: 18px;
+    color: #6a11cb;
+    margin-bottom: 15px;
+  }
+  
+  .qa-report-text {
+    width: 100%;
+    min-height: 200px;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.5;
+    resize: vertical;
+    transition: all 0.3s ease;
+  }
+  
+  .qa-report-text:focus {
+    border-color: #6a11cb;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(106, 17, 203, 0.1);
+  }
+  
+  .report-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 2px solid #f0f0f0;
+  }
+  
+  .status-badge {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    background: rgba(106, 17, 203, 0.1);
+    color: #6a11cb;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .back-button {
+    padding: 10px 20px;
+    border: 2px solid #6a11cb;
+    background: transparent;
+    color: #6a11cb;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background: rgba(106, 17, 203, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  .save-button {
+    padding: 10px 20px;
+    background: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .save-button:hover {
+    background: #5a0fb6;
+    transform: translateY(-2px);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .qa-report-container {
+      padding: 10px;
+    }
+    
+    .report-meta {
+      grid-template-columns: 1fr;
+    }
+    
+    .action-buttons {
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    .back-button,
+    .save-button {
+      width: 100%;
+    }
+  }
