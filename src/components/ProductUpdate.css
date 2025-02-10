@@ -1,0 +1,121 @@
+.product-step-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .product-step-section h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+  
+  .sub-tabs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .sub-tab-button {
+    flex: 1;
+    background: white;
+    border: 2px solid transparent;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(106, 17, 203, 0.1);
+  }
+  
+  .sub-tab-button:hover {
+    border-color: #6a11cb;
+    transform: translateY(-2px);
+  }
+  
+  .sub-tab-button.active {
+    background: #6a11cb;
+    color: white;
+    border-color: #6a11cb;
+    transform: translateY(-2px);
+  }
+  
+  .animated-content {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  .animated-content h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .animated-textarea {
+    width: 100%;
+    min-height: 200px;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 16px;
+    resize: vertical;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .animated-textarea:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 0 3px rgba(106, 17, 203, 0.1);
+    outline: none;
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+  }
+  
+  .submit-btn {
+    background: #6a11cb;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background: #5a0fb6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(106, 17, 203, 0.2);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .sub-tabs {
+      flex-direction: column;
+    }
+    
+    .animated-content {
+      padding: 20px;
+    }
+  }
